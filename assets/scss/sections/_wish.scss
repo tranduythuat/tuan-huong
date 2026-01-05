@@ -155,12 +155,12 @@
 
 div:where(.swal2-container) input:where(.swal2-input), 
 div:where(.swal2-container) textarea:where(.swal2-textarea) {
-    margin: 0;
-    font-size: 12px;
-    width: 80%;
-    margin-top: 2%;
-    border: 1px solid $primary-color;
-    border-radius: 8px;
+    margin: 0 !important;
+    font-size: 12px !important;
+    width: 80% !important;
+    margin-top: 2% !important;
+    border: 1px solid $primary-color !important;
+    border-radius: 8px !important;
 }
 
 div:where(.swal2-container) input:where(.swal2-input):focus, 
@@ -168,37 +168,37 @@ div:where(.swal2-container) input:where(.swal2-file):focus,
 div:where(.swal2-container) textarea:where(.swal2-textarea):focus {
     outline: none !important;
     box-shadow: none !important;
-    border-color: $primary-color;
+    border-color: $primary-color !important;
 }
 
 div:where(.swal2-container) h2:where(.swal2-title) {
-    color: $primary-color;
+    color: $primary-color !important;
     font-family: $blushing-rose-font;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 32px !important;
+    font-weight: bold !important;
 }
 
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){
-    background-color: $primary-color;
-    font-size: 14px;
+    background-color: $primary-color !important;
+    font-size: 14px !important;
 }
 
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel){
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 @media (max-width: 500px) {
     div:where(.swal2-container) input:where(.swal2-input), 
     div:where(.swal2-container) textarea:where(.swal2-textarea) {
-        font-size: calc((12 / 500) * 100vw);
+        font-size: calc((12 / 500) * 100vw) !important;
     }
 
     div:where(.swal2-container) h2:where(.swal2-title) {
-        font-size: calc((32 / 500) * 100vw);
+        font-size: calc((32 / 500) * 100vw) !important;
     }
     
     div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm),
     div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
-        font-size: calc((14 / 500) * 100vw);
+        font-size: calc((14 / 500) * 100vw) !important;
     }
 }

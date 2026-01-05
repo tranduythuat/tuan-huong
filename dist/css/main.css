@@ -529,12 +529,12 @@ header {
 
 div:where(.swal2-container) input:where(.swal2-input),
 div:where(.swal2-container) textarea:where(.swal2-textarea) {
-  margin: 0;
-  font-size: 12px;
-  width: 80%;
-  margin-top: 2%;
-  border: 1px solid #dc9ba8;
-  border-radius: 8px;
+  margin: 0 !important;
+  font-size: 12px !important;
+  width: 80% !important;
+  margin-top: 2% !important;
+  border: 1px solid #dc9ba8 !important;
+  border-radius: 8px !important;
 }
 
 div:where(.swal2-container) input:where(.swal2-input):focus,
@@ -542,36 +542,36 @@ div:where(.swal2-container) input:where(.swal2-file):focus,
 div:where(.swal2-container) textarea:where(.swal2-textarea):focus {
   outline: none !important;
   box-shadow: none !important;
-  border-color: #dc9ba8;
+  border-color: #dc9ba8 !important;
 }
 
 div:where(.swal2-container) h2:where(.swal2-title) {
-  color: #dc9ba8;
+  color: #dc9ba8 !important;
   font-family: "1FTVBlushingRose", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 32px !important;
+  font-weight: bold !important;
 }
 
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
-  background-color: #dc9ba8;
-  font-size: 14px;
+  background-color: #dc9ba8 !important;
+  font-size: 14px !important;
 }
 
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 @media (max-width: 500px) {
   div:where(.swal2-container) input:where(.swal2-input),
   div:where(.swal2-container) textarea:where(.swal2-textarea) {
-    font-size: 2.4vw;
+    font-size: 2.4vw !important;
   }
   div:where(.swal2-container) h2:where(.swal2-title) {
-    font-size: 6.4vw;
+    font-size: 6.4vw !important;
   }
   div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm),
   div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
-    font-size: 2.8vw;
+    font-size: 2.8vw !important;
   }
 }
 .album .content {
