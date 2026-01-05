@@ -694,7 +694,7 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
 }
 .album .content .album-swiper .swiper-slide {
   width: 100%;
-  aspect-ratio: 500/720;
+  aspect-ratio: 500/820;
 }
 @media (max-width: 500px) {
   .album .content .head h2 {
