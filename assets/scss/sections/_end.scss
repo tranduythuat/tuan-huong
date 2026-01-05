@@ -1,0 +1,56 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.end {
+    width: 100%;
+    aspect-ratio: 500 / 810;
+    background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tuan-linh/DSC04187 (1).webp') no-repeat 10% 100% / cover;
+    justify-content: start;
+    .content {
+        width: 100%;
+        padding: 0 8%;
+        font-family: $blushing-rose-font;
+        color: white;
+        p.subtext {
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-top: 55%;
+            line-height: 1.2;
+        }
+        p.subtext.chinese {
+            font-size: 14px;
+            font-family: 'kaiu', sans-serif;
+        }
+        p.thanks-text {
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 2%;
+            &.chinese {
+                font-family: 'kaiu', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            p.subtext {
+                font-size: calc((14 / 500) * 100vw);
+                letter-spacing: calc((1 / 500) * 100vw);
+            }
+
+            p.subtext.chinese {
+                font-size: calc((14 / 500) * 100vw);
+            }
+
+            p.thanks-text {
+                font-size: calc((16 / 500) * 100vw);
+                letter-spacing: calc((1 / 500) * 100vw);
+                &.chinese {
+                    font-size: calc((18 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

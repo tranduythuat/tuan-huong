@@ -1,0 +1,61 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+    aspect-ratio: 500 / 700;
+    background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tuan-linh/DSC04457.webp') no-repeat 54% 100% / 118%;
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        color: white;
+        font-family: $blushing-rose-font; 
+        padding-top: 18%;
+        p.date-range {
+            font-size: 44px;
+            letter-spacing: 5px;
+            margin-bottom: 2%;
+        }
+        p.couple-names {
+            font-size: 25px;
+            margin-bottom: 2%;
+            text-transform: uppercase;
+        }
+
+        p.couple-names.chinese {
+            font-size: 27px;
+            font-family: 'kaiu', sans-serif;
+        }
+
+        .invited-text {
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            margin-bottom: 6%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            p.date-range {
+                font-size: calc((44 / 500) * 100vw);
+                letter-spacing: calc((5 / 500) * 100vw);
+            }
+            p.couple-names {
+                font-size: calc((25 / 500) * 100vw);
+            }
+
+            p.couple-names.chinese {
+                font-size: calc((27 / 500) * 100vw);
+            }
+            .invited-text {
+                font-size: calc((12/ 500) * 100vw);
+                letter-spacing: calc((2 / 500) * 100vw);
+            }
+        }
+    }
+}
+

@@ -1,0 +1,97 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.countdown {
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 500;
+        background: url('../../assets/images/hoa4-07.png') no-repeat top / 50%,
+                    url('../../assets/images/hoa6-07.png') no-repeat bottom / 50%,
+                    url('../../assets/images/countdown_bg.png') no-repeat center / cover;
+        font-family: $gotham-font;
+        @include flex-center;
+        flex-direction: column;
+        h2.title {
+            font-family: $gothamLight-font;
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 3%;
+        }
+
+        .divider {
+            margin: 3% 0 10%;
+            img {
+                width: 30%;
+                height: auto;
+            }
+        }
+
+        .countdown-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+            z-index: 1;
+            width: 80%;
+    
+            .time-box {
+                text-align: center;
+                flex: 1;
+                min-width: 80px;
+                .number {
+                    font-size: 45px;
+                    font-weight: 300;
+                    color: #e8b4bc;
+                    line-height: 1;
+                    margin-bottom: 5%;
+                    font-family: $gothamBlack-font;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                }
+        
+                .label {
+                    font-size: 13px;
+                    color: #a1887f;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                }
+            }
+    
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            h2.title {
+                font-size: calc((12 / 500) * 100vw);
+            }
+            .subtitle {
+                font-size: calc((13 / 500) * 100vw);
+            }
+    
+            .countdown-box {
+                gap: calc((10 / 500) * 100vw);
+                .time-box {
+                    min-width: calc((80 / 500) * 100vw);
+                    .number {
+                        font-size: calc((45 / 500) * 100vw);
+                    }
+            
+                    .label {
+                        font-size: calc((13 / 500) * 100vw);
+                        letter-spacing: calc((2 / 500) * 100vw);
+                    }
+                }
+        
+            }
+        }
+    }
+}
