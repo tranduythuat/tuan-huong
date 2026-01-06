@@ -236,7 +236,7 @@ header {
   justify-content: end;
   width: 100%;
   aspect-ratio: 500/789;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.303)), url("../../assets/images/couple/image.webp") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.303)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tuan-huong/photos/image.webp") no-repeat center/cover;
 }
 .invitation .content .image-box h2 {
   font-family: "1FTVBlushingRose", sans-serif;
@@ -413,7 +413,7 @@ header {
   flex-direction: column;
   width: 100%;
   aspect-ratio: 500/232;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.611)), url("../../assets/images/image_02.webp") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.611)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tuan-huong/photos/image_02.webp") no-repeat center/cover;
 }
 .wish .content .head p.subtext {
   font-family: "SVN-Gotham", sans-serif;
@@ -580,7 +580,7 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
 .album .content .head {
   width: 100%;
   aspect-ratio: 500/355;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.186), rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.244)), url("../../assets/images/album_head.webp") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.186), rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.244)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tuan-huong/photos/album_head.webp") no-repeat center/cover;
   display: flex;
   justify-content: end;
   align-items: center;
