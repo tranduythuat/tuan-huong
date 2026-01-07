@@ -43,8 +43,9 @@
 
             .logo {
                 @include flex-center;
+                padding: 5% 0;
                 img {
-                    width: 20%;
+                    width: 18%;
                     height: auto;
                 }
             }
@@ -83,6 +84,7 @@
                     font-size: 30px;
                     font-weight: 300;
                     color: $primary-color;
+                    text-transform: uppercase;
                 }
                 .ampersand {
                     font-family: $heavenly-font;
