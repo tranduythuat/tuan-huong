@@ -137,7 +137,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const {
       name: name,
       confirm: confirm,
-      wish: wish,
+      phone: phone,
+      relation: relation,
+      guest_number: guest_number,
     } = data;
     console.log("🚀 ~ handleFormSubmit 2~ data:", data);
 
@@ -152,13 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
 
-    // https://script.google.com/macros/s/AKfycbyyQCsFjLGcNXa0hgY1hevp0NUg9n8ziR1tw3VEXY0MQS0jDM_rv2lHGQqFaYKwW0fz/exec
-    // const SHEET_ENDPOINTS = {
-    //   vi: "https://script.google.com/macros/s/AKfycbzZxA55wGdYuc8dUdT1L8CZiaG_RX1bnpnw1V4enwIARQ9U1Dazc1GR7bHtgrxNjGNZ/exec?sheet=vi",
-    //   ch: "https://script.google.com/macros/s/AKfycbzZxA55wGdYuc8dUdT1L8CZiaG_RX1bnpnw1V4enwIARQ9U1Dazc1GR7bHtgrxNjGNZ/exec?sheet=chinese",
-    // };
-
-    const sheetURL = SHEET_ENDPOINTS[lang] || SHEET_ENDPOINTS.vi;
+    const sheetURL = "https://script.google.com/macros/s/AKfycbyyQCsFjLGcNXa0hgY1hevp0NUg9n8ziR1tw3VEXY0MQS0jDM_rv2lHGQqFaYKwW0fz/exec?sheet=confirm";
 
     try {
       const res = await fetch(sheetURL, {
@@ -167,7 +163,9 @@ document.addEventListener("DOMContentLoaded", () => {
         body: new URLSearchParams({
           name,
           confirm,
-          wish
+          phone,
+          relation,
+          guest_number,
         }),
       });
 
